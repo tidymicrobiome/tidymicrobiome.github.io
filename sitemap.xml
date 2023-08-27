@@ -2,88 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/docs/chapter1/syllabus/</loc>
+    <loc>https://www.tidymicrobiome.org/docs/chapter1/</loc>
+    <lastmod>2023-08-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://www.tidymicrobiome.org/docs/chapter1/1-syllabus/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/docs/chapter2/syllabus/</loc>
+    <loc>https://www.tidymicrobiome.org/docs/chapter2/syllabus/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/docs/chapter1/</loc>
+    <loc>https://www.tidymicrobiome.org/docs/chapter2/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/docs/chapter2/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://example.com/docs/chapter1/reading-list/</loc>
+    <loc>https://www.tidymicrobiome.org/docs/chapter1/2-reading-list/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/docs/chapter2/reading-list/</loc>
+    <loc>https://www.tidymicrobiome.org/docs/chapter2/reading-list/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/docs/chapter1/takeaways/</loc>
+    <loc>https://www.tidymicrobiome.org/docs/chapter1/3-takeaways/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/team/</loc>
+    <loc>https://www.tidymicrobiome.org/docs/chapter1/4-install/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://www.tidymicrobiome.org/</loc>
+    <lastmod>2023-08-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://www.tidymicrobiome.org/docs/</loc>
+    <lastmod>2023-08-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://www.tidymicrobiome.org/team/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://www.tidymicrobiome.org/categories/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/post/2020-12-01-r-rmarkdown/</loc>
+    <loc>https://www.tidymicrobiome.org/post/2020-12-01-r-rmarkdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/tag/plot/</loc>
+    <loc>https://www.tidymicrobiome.org/tag/plot/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/post/</loc>
+    <loc>https://www.tidymicrobiome.org/post/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/category/r/</loc>
+    <loc>https://www.tidymicrobiome.org/category/r/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/tag/r-markdown/</loc>
+    <loc>https://www.tidymicrobiome.org/tag/r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/tag/regression/</loc>
+    <loc>https://www.tidymicrobiome.org/tag/regression/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://www.tidymicrobiome.org/tags/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>https://www.tidymicrobiome.org/admin/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/docs/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>https://www.tidymicrobiome.org/authors/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/admin/</loc>
+    <loc>https://www.tidymicrobiome.org/author/chuchu-wang/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/authors/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://example.com/author/chuchu-wang/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://example.com/author/xiaotao-shen/</loc>
+    <loc>https://www.tidymicrobiome.org/author/xiaotao-shen/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

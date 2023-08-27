@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xiaotao Shen | TidyMicrobiome</title>
-    <link>https://example.com/author/xiaotao-shen/</link>
-      <atom:link href="https://example.com/author/xiaotao-shen/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.tidymicrobiome.org/author/xiaotao-shen/</link>
+      <atom:link href="https://www.tidymicrobiome.org/author/xiaotao-shen/index.xml" rel="self" type="application/rss+xml" />
     <description>Xiaotao Shen</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://example.com/author/xiaotao-shen/avatar_hu86242519a21313948ac7dc77e0a27da6_1568301_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://www.tidymicrobiome.org/author/xiaotao-shen/avatar_hu86242519a21313948ac7dc77e0a27da6_1568301_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Xiaotao Shen</title>
-      <link>https://example.com/author/xiaotao-shen/</link>
+      <link>https://www.tidymicrobiome.org/author/xiaotao-shen/</link>
     </image>
     
   </channel>

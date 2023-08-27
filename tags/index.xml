@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | TidyMicrobiome</title>
-    <link>https://example.com/tags/</link>
-      <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.tidymicrobiome.org/tags/</link>
+      <atom:link href="https://www.tidymicrobiome.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu688a0d5b93e48ec404bb141e8bdc22d8_78695_512x512_fill_lanczos_center_3.png</url>
+      <url>https://www.tidymicrobiome.org/media/icon_hu688a0d5b93e48ec404bb141e8bdc22d8_78695_512x512_fill_lanczos_center_3.png</url>
       <title>Tags</title>
-      <link>https://example.com/tags/</link>
+      <link>https://www.tidymicrobiome.org/tags/</link>
     </image>
     
   </channel>
