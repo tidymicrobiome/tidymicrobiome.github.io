@@ -42,10 +42,6 @@
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://example.com/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://example.com/tag/plot/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -70,6 +66,10 @@
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://example.com/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://example.com/docs/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -78,6 +78,9 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://example.com/authors/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/author/chuchu-wang/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://example.com/author/xiaotao-shen/</loc>
