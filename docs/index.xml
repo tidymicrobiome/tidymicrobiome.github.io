@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TidyMicrobiome Tutorials | TidyMicrobiome</title>
+    <title>Preface | TidyMicrobiome</title>
     <link>https://www.tidymicrobiome.org/docs/</link>
       <atom:link href="https://www.tidymicrobiome.org/docs/index.xml" rel="self" type="application/rss+xml" />
-    <description>TidyMicrobiome Tutorials</description>
+    <description>Preface</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.tidymicrobiome.org/media/icon_hu688a0d5b93e48ec404bb141e8bdc22d8_78695_512x512_fill_lanczos_center_3.png</url>
-      <title>TidyMicrobiome Tutorials</title>
+      <title>Preface</title>
       <link>https://www.tidymicrobiome.org/docs/</link>
     </image>
     
