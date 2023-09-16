@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: September 15, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.38d972d2c980bd8cc056282613035d41.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Xiaotao Shen" />
+
+
+
+
+
+  
+
+<meta name="description" content="Loading included data You can load the demo data in microbiomedataset package to see the microbiome_dataset class.
+library(microbiomedataset) library(tidyverse) data(&#34;global_patterns&#34;) global_patterns #&gt; -------------------- #&gt; microbiomedataset version: 0.99.1 #&gt; -------------------- #&gt; 1." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://www.tidymicrobiome.org/docs/chapter2/1-import-data/" />
+<link rel="canonical" href="https://www.tidymicrobiome.org/docs/chapter2/1-import-data/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#795548" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://www.tidymicrobiome.org/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="TidyMicrobiome" />
+<meta property="og:url" content="https://www.tidymicrobiome.org/docs/chapter2/1-import-data/" />
+<meta property="og:title" content="Importing data | TidyMicrobiome" />
+<meta property="og:description" content="Loading included data You can load the demo data in microbiomedataset package to see the microbiome_dataset class.
+library(microbiomedataset) library(tidyverse) data(&#34;global_patterns&#34;) global_patterns #&gt; -------------------- #&gt; microbiomedataset version: 0.99.1 #&gt; -------------------- #&gt; 1." /><meta property="og:image" content="https://www.tidymicrobiome.org/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2019-05-05T00:00:00&#43;01:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Importing data | TidyMicrobiome</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="2aa4f6f106d6ff70ac4ef154675b335a" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.af53d435a6f065ea952c02dbbcbf1dd2.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">TidyMicrobiome</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">TidyMicrobiome</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#hero"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#packages"><span>Packages</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#team"><span>Team</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/docs/"><span>Tutorials</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://github.com/jaspershen" target="_blank" rel="noopener" aria-label="github">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          Chapter 2-microbiomeDataset class
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/docs/"><i class="fas fa-house pr-1"></i>Preface</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/docs/chapter1/"><i class="fas fa-book pr-1"></i>Chapter 1-Installation</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/docs/chapter1/1-tidymircobiome.org/">tidymicrobiome.org</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter1/2-github/">GitHub</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter1/3-gitlab/">GitLab</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter1/4-update/">Update</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/docs/chapter2/"><i class="fas fa-book-reader pr-1"></i>Chapter 2-microbiomeDataset class</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/docs/chapter2/1-import-data/">1 Importing data</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter2/2-relative-intensity/">2 Transform absolute to relative intensity</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter2/3-preprocess/">3 Functions for accessing and preprocessing data</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter2/4-merge/">4 Merge data</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#loading-included-data">Loading included data</a></li>
+    <li><a href="#create-microbiome_dataset-class-object">Create microbiome_dataset class object</a></li>
+    <li><a href="#convert-phyloseq-class-to-microbiome_dataset-class-object">Convert phyloseq class to microbiome_dataset class object</a></li>
+    <li><a href="#session-information">Session information</a></li>
+  </ul>
+</nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+          
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/docs/">
+        
+          Preface
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/docs/chapter2/">
+        
+          Chapter 2-microbiomeDataset class
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        1 Importing data
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Importing data</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <h2 id="loading-included-data">Loading included data</h2>
+<p>You can load the demo data in <code>microbiomedataset</code> package to see the <code>microbiome_dataset</code> class.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">microbiomedataset</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">data</span><span class="p">(</span><span class="s">&#34;global_patterns&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">global_patterns</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; microbiomedataset version: 0.99.1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1.expression_data:[ 19216 x 26 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 2.sample_info:[ 26 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 3.variable_info:[ 19216 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 4.sample_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 5.variable_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Processing information (extract_process_info())</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; create_microbiome_dataset ---------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;             Package               Function.used                Time</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1 microbiomedataset create_microbiome_dataset() 2022-07-10 10:56:13</span>
+</span></span></code></pre></div><p>So you can see that we have 1,9216 variables and 26 samples in the dataset.</p>
+<h2 id="create-microbiome_dataset-class-object">Create microbiome_dataset class object</h2>
+<p>You can also create the <code>microbiome_dataset</code> class using the <code>create_microbiome_dataset</code> function.</p>
+<p>We need to prepare at least three data for it.</p>
+<ol>
+<li>
+<p><code>expression_data</code>: rows are variables and columns are samples.</p>
+</li>
+<li>
+<p><code>sample_info</code>: Information for all the samples in <code>expression_data</code>. The first column should be <code>sample_id</code> which should be identical with the column names of <code>expression_data</code>.</p>
+</li>
+<li>
+<p><code>variable_info</code>: Information for all the variables in <code>expression_data</code>. The first column should be <code>variable_id</code> which should be identical with the row names of <code>expression_data</code>.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">expression_data</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">as.data.frame</span><span class="p">(</span><span class="nf">matrix</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">sample</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">100</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">nrow</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ncol</span> <span class="o">=</span> <span class="m">10</span>
+</span></span><span class="line"><span class="cl">  <span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">rownames</span><span class="p">(</span><span class="n">expression_data</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="nf">paste0</span><span class="p">(</span><span class="s">&#34;OTU&#34;</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="nf">nrow</span><span class="p">(</span><span class="n">expression_data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nf">colnames</span><span class="p">(</span><span class="n">expression_data</span><span class="p">)</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">paste0</span><span class="p">(</span><span class="s">&#34;Sample&#34;</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="nf">ncol</span><span class="p">(</span><span class="n">expression_data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">expression_data</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;       Sample1 Sample2 Sample3 Sample4 Sample5 Sample6 Sample7 Sample8 Sample9</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU1       89      91      32       7      70      79      79      48      52</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU2       40      59      83      58      71      78      17      90      27</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU3       15      71      74      37      58      64      75      66       7</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU4      100      13      49      10      50      88      97      52      70</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU5       81      47      14      17      84      66      35      16      68</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU6       11      95      76      82      59      79      67      88      56</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU7       28       3      88       4      33      78      15      13      64</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU8       67      54      58      69      28      66      99      20      28</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU9       13      91      87      30      94      40      23      18      88</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU10      65      87      71      21       6      46      29      59      50</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;       Sample10</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU1        32</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU2         3</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU3        17</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU4        59</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU5        82</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU6        95</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU7        87</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU8        35</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU9        13</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; OTU10      100</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">variable_info</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">as.data.frame</span><span class="p">(</span><span class="nf">matrix</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">sample</span><span class="p">(</span><span class="kc">letters</span><span class="p">,</span> <span class="m">70</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">nrow</span> <span class="o">=</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">expression_data</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ncol</span> <span class="o">=</span> <span class="m">7</span>
+</span></span><span class="line"><span class="cl">  <span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">rownames</span><span class="p">(</span><span class="n">variable_info</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="nf">rownames</span><span class="p">(</span><span class="n">expression_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">colnames</span><span class="p">(</span><span class="n">variable_info</span><span class="p">)</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">c</span><span class="p">(</span><span class="s">&#34;Domain&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Phylum&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Class&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Order&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Family&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Genus&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Species&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">variable_info</span><span class="o">$</span><span class="n">variable_id</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">rownames</span><span class="p">(</span><span class="n">expression_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">variable_info</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="n">variable_info</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">dplyr</span><span class="o">::</span><span class="nf">select</span><span class="p">(</span><span class="n">variable_id</span><span class="p">,</span> <span class="n">dplyr</span><span class="o">::</span><span class="nf">everything</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">sample_info</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">data.frame</span><span class="p">(</span><span class="n">sample_id</span> <span class="o">=</span> <span class="nf">colnames</span><span class="p">(</span><span class="n">expression_data</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">             <span class="n">class</span> <span class="o">=</span> <span class="s">&#34;Subject&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">object</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">create_microbiome_dataset</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">expression_data</span> <span class="o">=</span> <span class="n">expression_data</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sample_info</span> <span class="o">=</span> <span class="n">sample_info</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">variable_info</span> <span class="o">=</span> <span class="n">variable_info</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">object</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; microbiomedataset version: 0.99.1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1.expression_data:[ 10 x 10 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 2.sample_info:[ 10 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 3.variable_info:[ 10 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 4.sample_info_note:[ 2 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 5.variable_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Processing information (extract_process_info())</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; create_microbiome_dataset ---------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;             Package               Function.used                Time</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1 microbiomedataset create_microbiome_dataset() 2023-09-15 21:07:52</span>
+</span></span></code></pre></div><h2 id="convert-phyloseq-class-to-microbiome_dataset-class-object">Convert phyloseq class to microbiome_dataset class object</h2>
+<p>We can also transfer or convert other common class object to <code>microbiome_dataset</code> class.</p>
+<p>Please install <code>phyloseq</code> package at first.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">if</span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">BiocManager</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;BiocManager&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">if</span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">  <span class="n">BiocManager</span><span class="o">::</span><span class="nf">install</span><span class="p">(</span><span class="s">&#34;phyloseq&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">data</span><span class="p">(</span><span class="n">GlobalPatterns</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">GlobalPatterns</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; phyloseq-class experiment-level object</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; otu_table()   OTU Table:         [ 19216 taxa and 26 samples ]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; sample_data() Sample Data:       [ 26 samples by 7 sample variables ]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; tax_table()   Taxonomy Table:    [ 19216 taxa by 7 taxonomic ranks ]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; phy_tree()    Phylogenetic Tree: [ 19216 tips and 19215 internal nodes ]</span>
+</span></span></code></pre></div><p>The first function is <code>convert2microbiome_dataset</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">object1</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">convert2microbiome_dataset</span><span class="p">(</span><span class="n">object</span> <span class="o">=</span> <span class="n">GlobalPatterns</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">object1</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; microbiomedataset version: 0.99.1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1.expression_data:[ 19216 x 26 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 2.sample_info:[ 26 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 3.variable_info:[ 19216 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 4.sample_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 5.variable_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Processing information (extract_process_info())</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; create_microbiome_dataset ---------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;             Package               Function.used                Time</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1 microbiomedataset create_microbiome_dataset() 2023-09-15 21:08:03</span>
+</span></span></code></pre></div><p>The second function is <code>as.microbiome_dataset</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">object2</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">as.microbiome_dataset</span><span class="p">(</span><span class="n">object</span> <span class="o">=</span> <span class="n">GlobalPatterns</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">object2</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; microbiomedataset version: 0.99.1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1.expression_data:[ 19216 x 26 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 2.sample_info:[ 26 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 3.variable_info:[ 19216 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 4.sample_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 5.variable_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Processing information (extract_process_info())</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; create_microbiome_dataset ---------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;             Package               Function.used                Time</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1 microbiomedataset create_microbiome_dataset() 2023-09-15 21:08:12</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">microbiomedataset</span><span class="o">::</span><span class="nf">plot_barplot</span><span class="p">(</span><span class="n">object</span> <span class="o">=</span> <span class="n">object</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                                <span class="n">top_n</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">fill</span> <span class="o">=</span> <span class="s">&#34;Phylum&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><img src="/docs/chapter2/1-import-data_files/figure-html/unnamed-chunk-9-1.png" width="100%" />
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">microbiomedataset</span><span class="o">::</span><span class="nf">plot_barplot</span><span class="p">(</span><span class="n">object</span> <span class="o">=</span> <span class="n">object</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                                <span class="n">top_n</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">fill</span> <span class="o">=</span> <span class="s">&#34;Phylum&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                                <span class="n">relative</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                                <span class="n">re_calculate_relative</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+</span></span></code></pre></div><img src="/docs/chapter2/1-import-data_files/figure-html/unnamed-chunk-10-1.png" width="100%" />
+<h2 id="session-information">Session information</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">sessionInfo</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; R version 4.3.0 (2023-04-21)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Platform: x86_64-apple-darwin20 (64-bit)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Running under: macOS Ventura 13.5.2</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Matrix products: default</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; locale:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; time zone: America/Los_Angeles</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; tzcode source: internal</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; attached base packages:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; other attached packages:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [1] phyloseq_1.44.0           BiocManager_1.30.21      </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [3] lubridate_1.9.2           forcats_1.0.0            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [5] stringr_1.5.0             dplyr_1.1.2              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [7] purrr_1.0.1               readr_2.1.4              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [9] tidyr_1.3.0               tibble_3.2.1             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [11] ggplot2_3.4.2             tidyverse_2.0.0          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [13] microbiomedataset_0.99.10</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; loaded via a namespace (and not attached):</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [1] RColorBrewer_1.1-3          rstudioapi_0.14            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [3] jsonlite_1.8.5              shape_1.4.6                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [5] magrittr_2.0.3              farver_2.1.1               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [7] MALDIquant_1.22.1           rmarkdown_2.22             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [9] GlobalOptions_0.1.2         zlibbioc_1.46.0            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [11] vctrs_0.6.2                 multtest_2.56.0            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [13] RCurl_1.98-1.12             blogdown_1.18.1            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [15] htmltools_0.5.5             S4Arrays_1.0.4             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [17] Rhdf5lib_1.22.0             rhdf5_2.44.0               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [19] gridGraphics_0.5-1          mzID_1.38.0                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [21] sass_0.4.6                  bslib_0.5.0                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [23] htmlwidgets_1.6.2           plyr_1.8.8                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [25] zoo_1.8-12                  plotly_4.10.2              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [27] impute_1.74.1               cachem_1.0.8               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [29] igraph_1.4.3                lifecycle_1.0.3            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [31] iterators_1.0.14            pkgconfig_2.0.3            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [33] Matrix_1.5-4                R6_2.5.1                   </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [35] fastmap_1.1.1               GenomeInfoDbData_1.2.10    </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [37] MatrixGenerics_1.12.2       clue_0.3-64                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [39] digest_0.6.31               pcaMethods_1.92.0          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [41] colorspace_2.1-0            masstools_1.0.10           </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [43] S4Vectors_0.38.1            rprojroot_2.0.3            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [45] GenomicRanges_1.52.0        vegan_2.6-4                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [47] labeling_0.4.2              timechange_0.2.0           </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [49] fansi_1.0.4                 httr_1.4.6                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [51] mgcv_1.8-42                 polyclip_1.10-4            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [53] compiler_4.3.0              here_1.0.1                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [55] remotes_2.4.2               withr_2.5.0                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [57] doParallel_1.0.17           BiocParallel_1.34.2        </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [59] viridis_0.6.3               highr_0.10                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [61] ggforce_0.4.1               MASS_7.3-58.4              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [63] DelayedArray_0.26.3         biomformat_1.28.0          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [65] rjson_0.2.21                permute_0.9-7              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [67] ggsci_3.0.0                 mzR_2.34.0                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [69] tools_4.3.0                 ape_5.7-1                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [71] zip_2.3.0                   glue_1.6.2                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [73] rhdf5filters_1.12.1         nlme_3.1-162               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [75] grid_4.3.0                  cluster_2.1.4              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [77] reshape2_1.4.4              ade4_1.7-22                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [79] generics_0.1.3              gtable_0.3.3               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [81] tzdb_0.4.0                  preprocessCore_1.62.1      </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [83] data.table_1.14.8           hms_1.1.3                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [85] tidygraph_1.2.3             utf8_1.2.3                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [87] XVector_0.40.0              BiocGenerics_0.46.0        </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [89] ggrepel_0.9.3               foreach_1.5.2              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [91] pillar_1.9.0                yulab.utils_0.0.6          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [93] limma_3.56.2                splines_4.3.0              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [95] circlize_0.4.15             tweenr_2.0.2               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [97] lattice_0.21-8              survival_3.5-5             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [99] tidyselect_1.2.0            ComplexHeatmap_2.16.0      </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [101] Biostrings_2.68.1           pbapply_1.7-0              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [103] knitr_1.43                  gridExtra_2.3              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [105] bookdown_0.34               IRanges_2.34.0             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [107] ProtGenerics_1.32.0         SummarizedExperiment_1.30.2</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [109] Rdisop_1.60.0               stats4_4.3.0               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [111] xfun_0.39                   graphlayouts_1.0.0         </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [113] Biobase_2.60.0              MSnbase_2.26.0             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [115] matrixStats_1.0.0           stringi_1.7.12             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [117] lazyeval_0.2.2              yaml_2.3.7                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [119] evaluate_0.21               codetools_0.2-19           </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [121] ggraph_2.1.0                MsCoreUtils_1.12.0         </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [123] ggplotify_0.1.0             cli_3.6.1                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [125] affyio_1.70.0               munsell_0.5.0              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [127] jquerylib_0.1.4             Rcpp_1.0.10                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [129] GenomeInfoDb_1.36.0         png_0.1-8                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [131] XML_3.99-0.14               parallel_4.3.0             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [133] bitops_1.0-7                tidytree_0.4.2             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [135] viridisLite_0.4.2           scales_1.2.1               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [137] affy_1.78.0                 openxlsx_4.2.5.2           </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [139] ncdf4_1.21                  crayon_1.5.2               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [141] GetoptLong_1.0.5            rlang_1.1.1                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [143] massdataset_1.0.25          vsn_3.68.0</span>
+</span></span></code></pre></div>
+
+        </article>
+
+        
+
+
+
+
+
+        
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/docs/chapter2/2-relative-intensity/" rel="prev">Transform absolute to relative intensity</a>
+  </div>
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on May 5, 2019</p>
+
+        
+
+
+
+
+
+
+  
+
+<p class="edit-page">
+  <a href="https://github.com/tidymicrobiome/tidymicrobiome-website/edit/main/content/docs/chapter2/1-import-data.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+        
+
+
+  
+  
+  
+
+  
+
+  
+  <section id="comments">
+    
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "blog-at8qrhng8b" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  </section>
+  
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+  <hr>
+
+    <div style="display: flex; justify-content: space-between; padding: 20px;">
+          
+ <div style="flex: 1;">
+            </div>
+            
+    
+            <div style="flex: 1;">
+  <p style="text-align:left;">
+    Find me here:
+    <br>
+    <i class="fa-brands fa-github"></i> <a href="https://github.com/jaspershen" target="_blank" rel="noopener">GitHub</a>
+<br>
+        <i class="fa-brands fa-weixin"></i> <a href="https://jaspershen.github.io/image/wechat_QR.jpg" target="_blank" rel="noopener">WeChat</a>
+
+    <br>
+        <i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/xiaotaoshen1990" target="_blank" rel="noopener">Twitter</a>
+        
+   <br>
+        <i class="fa-solid fa-envelope"></i> <a href="https://jaspershen.github.io/#contact" target="_blank" rel="noopener">Email</a>  
+        
+        <br>
+<i class="fa-solid fa-location-dot"></i> Address: <a href="https://goo.gl/maps/jSKXmNMoj1s97uQGA" target="_blank" rel="noopener">3165 Porter Drive, Palo Alto, CA 94304</a>
+   
+    </p>
+            </div>
+            
+    
+            <div style="flex: 1;">
+            </div>
+            
+    
+            <div style="flex: 1;">
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=e43qUF1sR8y0B12BqEm-gDwkYxSmbro-n8KEiBINpdY"></script>
+            </div>
+            
+    
+            <div style="flex: 1;">
+            </div>
+    
+        </div>
+        
+      <hr>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022-2023 Xiaotao Shen
+  </p>
+  
+
+
+
+
+  
+  
+</footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <script id="dsq-count-scr" src="https://blog-at8qrhng8b.disqus.com/count.js" async></script>
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.3322c0d94f0e691b0b24c63f4c41064b.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

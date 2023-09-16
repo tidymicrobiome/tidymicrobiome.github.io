@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: September 15, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.38d972d2c980bd8cc056282613035d41.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Xiaotao Shen" />
+
+
+
+
+
+  
+
+<meta name="description" content="Loading included data Let&rsquo;s load the demo data.
+library(microbiomedataset) library(tidyverse) data(&#34;global_patterns&#34;) global_patterns #&gt; -------------------- #&gt; microbiomedataset version: 0.99.1 #&gt; -------------------- #&gt; 1.expression_data:[ 19216 x 26 data.frame] #&gt; 2.sample_info:[ 26 x 8 data." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://www.tidymicrobiome.org/docs/chapter2/2-relative-intensity/" />
+<link rel="canonical" href="https://www.tidymicrobiome.org/docs/chapter2/2-relative-intensity/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#795548" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://www.tidymicrobiome.org/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="TidyMicrobiome" />
+<meta property="og:url" content="https://www.tidymicrobiome.org/docs/chapter2/2-relative-intensity/" />
+<meta property="og:title" content="Transform absolute to relative intensity | TidyMicrobiome" />
+<meta property="og:description" content="Loading included data Let&rsquo;s load the demo data.
+library(microbiomedataset) library(tidyverse) data(&#34;global_patterns&#34;) global_patterns #&gt; -------------------- #&gt; microbiomedataset version: 0.99.1 #&gt; -------------------- #&gt; 1.expression_data:[ 19216 x 26 data.frame] #&gt; 2.sample_info:[ 26 x 8 data." /><meta property="og:image" content="https://www.tidymicrobiome.org/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2019-05-05T00:00:00&#43;01:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Transform absolute to relative intensity | TidyMicrobiome</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="fa2abbb0fdfcc5dd3e1798800aedbf8d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.af53d435a6f065ea952c02dbbcbf1dd2.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">TidyMicrobiome</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">TidyMicrobiome</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#hero"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#packages"><span>Packages</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#team"><span>Team</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/docs/"><span>Tutorials</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://github.com/jaspershen" target="_blank" rel="noopener" aria-label="github">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          Chapter 2-microbiomeDataset class
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/docs/"><i class="fas fa-house pr-1"></i>Preface</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/docs/chapter1/"><i class="fas fa-book pr-1"></i>Chapter 1-Installation</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/docs/chapter1/1-tidymircobiome.org/">tidymicrobiome.org</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter1/2-github/">GitHub</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter1/3-gitlab/">GitLab</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter1/4-update/">Update</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/docs/chapter2/"><i class="fas fa-book-reader pr-1"></i>Chapter 2-microbiomeDataset class</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/docs/chapter2/1-import-data/">1 Importing data</a></li>
+
+
+
+  <li class="active"><a href="/docs/chapter2/2-relative-intensity/">2 Transform absolute to relative intensity</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter2/3-preprocess/">3 Functions for accessing and preprocessing data</a></li>
+
+
+
+  <li class=""><a href="/docs/chapter2/4-merge/">4 Merge data</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#loading-included-data">Loading included data</a></li>
+    <li><a href="#transform-to-relative-intensity">Transform to relative intensity</a></li>
+    <li><a href="#session-information">Session information</a></li>
+  </ul>
+</nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+          
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/docs/">
+        
+          Preface
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/docs/chapter2/">
+        
+          Chapter 2-microbiomeDataset class
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        2 Transform absolute to relative intensity
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Transform absolute to relative intensity</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <h2 id="loading-included-data">Loading included data</h2>
+<p>Let&rsquo;s load the demo data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">microbiomedataset</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">data</span><span class="p">(</span><span class="s">&#34;global_patterns&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">global_patterns</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; microbiomedataset version: 0.99.1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1.expression_data:[ 19216 x 26 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 2.sample_info:[ 26 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 3.variable_info:[ 19216 x 8 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 4.sample_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 5.variable_info_note:[ 8 x 2 data.frame]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; -------------------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Processing information (extract_process_info())</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; create_microbiome_dataset ---------- </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;             Package               Function.used                Time</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; 1 microbiomedataset create_microbiome_dataset() 2022-07-10 10:56:13</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">expression_data</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">extract_expression_data</span><span class="p">(</span><span class="n">global_patterns</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">expression_data</span><span class="o">$</span><span class="n">CL3</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [1] 0 0 0 0 0 0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">expression_data</span><span class="o">$</span><span class="n">CL3</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [1] 0 0 0 0 0 0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">apply</span><span class="p">(</span><span class="n">expression_data</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">sum</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;      CL3      CC1      SV1  M31Fcsw  M11Fcsw  M31Plmr  M11Plmr  F21Plmr </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   864077  1135457   697509  1543451  2076476   718943   433894   186297 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  M31Tong  M11Tong LMEpi24M SLEpi20M   AQC1cm   AQC4cm   AQC7cm      NP2 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  2000402   100187  2117592  1217312  1167748  2357181  1699293   523634 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;      NP3      NP5  TRRsed1  TRRsed2  TRRsed3     TS28     TS29    Even1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  1478965  1652754    58688   493126   279704   937466  1211071  1216137 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;    Even2    Even3 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   971073  1078241</span>
+</span></span></code></pre></div><p>The raw data is count.</p>
+<h2 id="transform-to-relative-intensity">Transform to relative intensity</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">global_patterns_relative</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">transform2relative_intensity</span><span class="p">(</span><span class="n">object</span> <span class="o">=</span> <span class="n">global_patterns</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">expression_data_relative</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">extract_expression_data</span><span class="p">(</span><span class="n">global_patterns_relative</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">expression_data_relative</span><span class="o">$</span><span class="n">CL3</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [1] 0 0 0 0 0 0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">apply</span><span class="p">(</span><span class="n">expression_data_relative</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">sum</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;      CL3      CC1      SV1  M31Fcsw  M11Fcsw  M31Plmr  M11Plmr  F21Plmr </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;        1        1        1        1        1        1        1        1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  M31Tong  M11Tong LMEpi24M SLEpi20M   AQC1cm   AQC4cm   AQC7cm      NP2 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;        1        1        1        1        1        1        1        1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;      NP3      NP5  TRRsed1  TRRsed2  TRRsed3     TS28     TS29    Even1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;        1        1        1        1        1        1        1        1 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;    Even2    Even3 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;        1        1</span>
+</span></span></code></pre></div><h2 id="session-information">Session information</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">sessionInfo</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; R version 4.3.0 (2023-04-21)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Platform: x86_64-apple-darwin20 (64-bit)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Running under: macOS Ventura 13.5.2</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; Matrix products: default</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; locale:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; time zone: America/Los_Angeles</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; tzcode source: internal</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; attached base packages:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; other attached packages:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [1] lubridate_1.9.2           forcats_1.0.0            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [3] stringr_1.5.0             dplyr_1.1.2              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [5] purrr_1.0.1               readr_2.1.4              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [7] tidyr_1.3.0               tibble_3.2.1             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [9] ggplot2_3.4.2             tidyverse_2.0.0          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [11] microbiomedataset_0.99.10</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; loaded via a namespace (and not attached):</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [1] RColorBrewer_1.1-3          rstudioapi_0.14            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [3] jsonlite_1.8.5              shape_1.4.6                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [5] magrittr_2.0.3              farver_2.1.1               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [7] MALDIquant_1.22.1           rmarkdown_2.22             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;   [9] GlobalOptions_0.1.2         zlibbioc_1.46.0            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [11] vctrs_0.6.2                 multtest_2.56.0            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [13] RCurl_1.98-1.12             blogdown_1.18.1            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [15] htmltools_0.5.5             S4Arrays_1.0.4             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [17] Rhdf5lib_1.22.0             rhdf5_2.44.0               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [19] gridGraphics_0.5-1          mzID_1.38.0                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [21] sass_0.4.6                  bslib_0.5.0                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [23] htmlwidgets_1.6.2           plyr_1.8.8                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [25] zoo_1.8-12                  plotly_4.10.2              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [27] impute_1.74.1               cachem_1.0.8               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [29] igraph_1.4.3                lifecycle_1.0.3            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [31] iterators_1.0.14            pkgconfig_2.0.3            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [33] Matrix_1.5-4                R6_2.5.1                   </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [35] fastmap_1.1.1               GenomeInfoDbData_1.2.10    </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [37] MatrixGenerics_1.12.2       clue_0.3-64                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [39] digest_0.6.31               pcaMethods_1.92.0          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [41] colorspace_2.1-0            masstools_1.0.10           </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [43] S4Vectors_0.38.1            rprojroot_2.0.3            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [45] GenomicRanges_1.52.0        vegan_2.6-4                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [47] timechange_0.2.0            fansi_1.0.4                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [49] httr_1.4.6                  mgcv_1.8-42                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [51] polyclip_1.10-4             compiler_4.3.0             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [53] here_1.0.1                  remotes_2.4.2              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [55] withr_2.5.0                 doParallel_1.0.17          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [57] BiocParallel_1.34.2         viridis_0.6.3              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [59] ggforce_0.4.1               MASS_7.3-58.4              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [61] DelayedArray_0.26.3         biomformat_1.28.0          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [63] rjson_0.2.21                permute_0.9-7              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [65] ggsci_3.0.0                 mzR_2.34.0                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [67] tools_4.3.0                 ape_5.7-1                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [69] zip_2.3.0                   glue_1.6.2                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [71] rhdf5filters_1.12.1         nlme_3.1-162               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [73] grid_4.3.0                  cluster_2.1.4              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [75] reshape2_1.4.4              ade4_1.7-22                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [77] generics_0.1.3              gtable_0.3.3               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [79] tzdb_0.4.0                  preprocessCore_1.62.1      </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [81] data.table_1.14.8           hms_1.1.3                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [83] tidygraph_1.2.3             utf8_1.2.3                 </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [85] XVector_0.40.0              BiocGenerics_0.46.0        </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [87] ggrepel_0.9.3               foreach_1.5.2              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [89] pillar_1.9.0                yulab.utils_0.0.6          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [91] limma_3.56.2                splines_4.3.0              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [93] circlize_0.4.15             tweenr_2.0.2               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [95] lattice_0.21-8              survival_3.5-5             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [97] tidyselect_1.2.0            ComplexHeatmap_2.16.0      </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt;  [99] Biostrings_2.68.1           pbapply_1.7-0              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [101] knitr_1.43                  gridExtra_2.3              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [103] bookdown_0.34               phyloseq_1.44.0            </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [105] IRanges_2.34.0              ProtGenerics_1.32.0        </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [107] SummarizedExperiment_1.30.2 Rdisop_1.60.0              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [109] stats4_4.3.0                xfun_0.39                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [111] graphlayouts_1.0.0          Biobase_2.60.0             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [113] MSnbase_2.26.0              matrixStats_1.0.0          </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [115] stringi_1.7.12              lazyeval_0.2.2             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [117] yaml_2.3.7                  evaluate_0.21              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [119] codetools_0.2-19            ggraph_2.1.0               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [121] MsCoreUtils_1.12.0          BiocManager_1.30.21        </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [123] ggplotify_0.1.0             cli_3.6.1                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [125] affyio_1.70.0               munsell_0.5.0              </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [127] jquerylib_0.1.4             Rcpp_1.0.10                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [129] GenomeInfoDb_1.36.0         png_0.1-8                  </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [131] XML_3.99-0.14               parallel_4.3.0             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [133] bitops_1.0-7                tidytree_0.4.2             </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [135] viridisLite_0.4.2           scales_1.2.1               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [137] affy_1.78.0                 openxlsx_4.2.5.2           </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [139] ncdf4_1.21                  crayon_1.5.2               </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [141] GetoptLong_1.0.5            rlang_1.1.1                </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#&gt; [143] massdataset_1.0.25          vsn_3.68.0</span>
+</span></span></code></pre></div>
+
+        </article>
+
+        
+
+
+
+
+
+        
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/docs/chapter2/1-import-data/" rel="next">Importing data</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/docs/chapter2/3-preprocess/" rel="prev">Functions for accessing and preprocessing data</a>
+  </div>
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on May 5, 2019</p>
+
+        
+
+
+
+
+
+
+  
+
+<p class="edit-page">
+  <a href="https://github.com/tidymicrobiome/tidymicrobiome-website/edit/main/content/docs/chapter2/2-relative-intensity.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+        
+
+
+  
+  
+  
+
+  
+
+  
+  <section id="comments">
+    
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "blog-at8qrhng8b" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  </section>
+  
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+  <hr>
+
+    <div style="display: flex; justify-content: space-between; padding: 20px;">
+          
+ <div style="flex: 1;">
+            </div>
+            
+    
+            <div style="flex: 1;">
+  <p style="text-align:left;">
+    Find me here:
+    <br>
+    <i class="fa-brands fa-github"></i> <a href="https://github.com/jaspershen" target="_blank" rel="noopener">GitHub</a>
+<br>
+        <i class="fa-brands fa-weixin"></i> <a href="https://jaspershen.github.io/image/wechat_QR.jpg" target="_blank" rel="noopener">WeChat</a>
+
+    <br>
+        <i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/xiaotaoshen1990" target="_blank" rel="noopener">Twitter</a>
+        
+   <br>
+        <i class="fa-solid fa-envelope"></i> <a href="https://jaspershen.github.io/#contact" target="_blank" rel="noopener">Email</a>  
+        
+        <br>
+<i class="fa-solid fa-location-dot"></i> Address: <a href="https://goo.gl/maps/jSKXmNMoj1s97uQGA" target="_blank" rel="noopener">3165 Porter Drive, Palo Alto, CA 94304</a>
+   
+    </p>
+            </div>
+            
+    
+            <div style="flex: 1;">
+            </div>
+            
+    
+            <div style="flex: 1;">
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=e43qUF1sR8y0B12BqEm-gDwkYxSmbro-n8KEiBINpdY"></script>
+            </div>
+            
+    
+            <div style="flex: 1;">
+            </div>
+    
+        </div>
+        
+      <hr>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022-2023 Xiaotao Shen
+  </p>
+  
+
+
+
+
+  
+  
+</footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <script id="dsq-count-scr" src="https://blog-at8qrhng8b.disqus.com/count.js" async></script>
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.3322c0d94f0e691b0b24c63f4c41064b.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
