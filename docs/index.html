@@ -772,7 +772,7 @@
 
     
       <ul class="nav docs-sidenav">
-        <li class="active"><a href="/docs/">Preface</a></li>
+        <li class="active"><a href="/docs/"><i class="fas fa-house pr-1"></i>Preface</a></li>
     
       
 
@@ -807,11 +807,7 @@
 
 
 
-  <li class=""><a href="/docs/chapter1/4-gitee/">Gitee</a></li>
-
-
-
-  <li class=""><a href="/docs/chapter1/5-update/">Update</a></li>
+  <li class=""><a href="/docs/chapter1/4-update/">Update</a></li>
 
       
         </ul>
@@ -835,22 +831,7 @@
 
     
       <div class="docs-toc-item">
-        <a class="docs-toc-link " href="/docs/chapter2/"><i class="fas fa-book-reader pr-1"></i>Chapter 2-microbiomeDataset</a>
-    
-      
-        <ul class="nav docs-sidenav">
-      
-
-
-  <li class=""><a href="/docs/chapter2/syllabus/">Syllabus</a></li>
-
-
-
-  <li class=""><a href="/docs/chapter2/reading-list/">Reading List</a></li>
-
-      
-        </ul>
-      
+        <a class="docs-toc-link " href="/docs/chapter2/"><i class="fas fa-book-reader pr-1"></i>Chapter 2-microbiomeDataset class</a>
     
 
     
@@ -870,6 +851,40 @@
     </div>
 
     
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents"></nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
     
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
@@ -918,16 +933,38 @@
           
           
 
-          <p>Welcome to the <code>TidyMicrobiome</code> Tutorials!</p>
-<p>microbiomedataset provide the microbiome_dataset class which is specifically developed and designed to organize the rectangular microbiome data sets into a standard structure.</p>
-<p>If you have any questions about microbiomedataset, please don’t hesitate to email me (<a href="mailto:shenxt1990@outlook.com">shenxt1990@outlook.com</a>) or reach out me via the social medias below.</p>
-<p>Microbiome data analysis is complex and challenging due to its high variability. To address this issue, we present microbiomeDataset, an R package that offers a tidyverse-style framework for organizing and processing microbiome data in a standardized and reproducible manner. The package is compatible with other bioinformatics tools and can easily be integrated into existing workflows. A case study using a public microbiome dataset demonstrate the effectiveness of microbiomeDataset in organizing and processing microbiome data. With its comprehensive and accessible solution, microbiomeDataset is suitable for both novice and experienced R users. A detailed tutorial and case study are available in the Supplementary Materials.</p>
+          <p>Here, you can learn how to use <code>tidymicrobiome</code> to do the data processing and analysis for the LC-MS metabolomics data. It contains several parts.</p>
+<h1 id="if-you-are-new-to-r-or-the-tidyverse">If you are new to R or the <code>tidyverse</code></h1>
+<p>We recommend that you start by learning some basics about R and the <a href="https://www.tidyverse.org/" target="_blank" rel="noopener">tidyverse</a> first, then return here when you feel ready. Here are some resources to start learning:</p>
+<ul>
+<li>
+<p><a href="https://education.rstudio.com/learn/" target="_blank" rel="noopener">Finding Your Way To R</a>, from the RStudio Education team.</p>
+</li>
+<li>
+<p><a href="https://www.tidyverse.org/learn/" target="_blank" rel="noopener">Learn the tidyverse</a>, from the tidyverse team.</p>
+</li>
+</ul>
+<h1 id="part-1-install-tidymicrobiome">Part 1. Install <code>tidymicrobiome</code></h1>
+<p>You can learn how to install <code>tidymicrobiome</code>, and update it. You can also find here how to download the docker version of <code>tidymicrobiome</code> and build your own docker image based on <code>tidymicrobiome</code>.</p>
 
 
 <ul class="cta-group">
   
   <li>
-    <a href="chapter1"  class="btn btn-primary px-3 py-3">👉 Get Started with Chapter 1</a>
+    <a href="chapter1"  class="btn btn-primary px-3 py-3">👉 Chapter 1</a>
+  </li>
+  
+  
+</ul>
+
+<h1 id="part-2-massdatabase-package-and-mass_dataset-class">Part 2. <code>massdatabase</code> package and <code>mass_dataset</code> class</h1>
+<p>You can find here how to download the demo data and create <code>mass_dataset</code> class by yourself. And how to use <code>mass_dataset</code> class organize your omics data and process it.</p>
+
+
+<ul class="cta-group">
+  
+  <li>
+    <a href="chapter7"  class="btn btn-primary px-3 py-3">👉 Chapter 2</a>
   </li>
   
   
@@ -989,32 +1026,6 @@
 
   
 
-  
-  <section id="comments">
-    
-<div id="disqus_thread"></div>
-<script>
-  var disqus_config = function () {
-    
-    
-    
-  };
-  (function() {
-    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-      return;
-    }
-    var d = document, s = d.createElement('script'); s.async = true;
-    s.src = 'https://' + "blog-at8qrhng8b" + '.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-  </section>
   
 
 

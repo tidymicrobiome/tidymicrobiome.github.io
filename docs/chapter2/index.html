@@ -316,7 +316,7 @@
 <meta property="twitter:image" content="https://www.tidymicrobiome.org/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_512x512_fill_lanczos_center_3.png" />
 <meta property="og:site_name" content="TidyMicrobiome" />
 <meta property="og:url" content="https://www.tidymicrobiome.org/docs/chapter2/" />
-<meta property="og:title" content="Chapter 2-microbiomeDataset | TidyMicrobiome" />
+<meta property="og:title" content="Chapter 2-microbiomeDataset class | TidyMicrobiome" />
 <meta property="og:description" content="microbiomeDataset package to organize microbiome data." /><meta property="og:image" content="https://www.tidymicrobiome.org/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
@@ -345,7 +345,7 @@
 
 
   
-  <title>Chapter 2-microbiomeDataset | TidyMicrobiome</title>
+  <title>Chapter 2-microbiomeDataset class | TidyMicrobiome</title>
 
   
   
@@ -772,7 +772,7 @@
 
     
       <ul class="nav docs-sidenav">
-        <li class=""><a href="/docs/">Preface</a></li>
+        <li class=""><a href="/docs/"><i class="fas fa-house pr-1"></i>Preface</a></li>
     
       
 
@@ -807,11 +807,7 @@
 
 
 
-  <li class=""><a href="/docs/chapter1/4-gitee/">Gitee</a></li>
-
-
-
-  <li class=""><a href="/docs/chapter1/5-update/">Update</a></li>
+  <li class=""><a href="/docs/chapter1/4-update/">Update</a></li>
 
       
         </ul>
@@ -835,22 +831,7 @@
 
     
       <div class="docs-toc-item">
-        <a class="docs-toc-link  active" href="/docs/chapter2/"><i class="fas fa-book-reader pr-1"></i>Chapter 2-microbiomeDataset</a>
-    
-      
-        <ul class="nav docs-sidenav">
-      
-
-
-  <li class=""><a href="/docs/chapter2/syllabus/">Syllabus</a></li>
-
-
-
-  <li class=""><a href="/docs/chapter2/reading-list/">Reading List</a></li>
-
-      
-        </ul>
-      
+        <a class="docs-toc-link  active" href="/docs/chapter2/"><i class="fas fa-book-reader pr-1"></i>Chapter 2-microbiomeDataset class</a>
     
 
     
@@ -891,10 +872,8 @@
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#flexibility">Flexibility</a></li>
-    <li><a href="#delete-courses">Delete courses</a></li>
-    <li><a href="#update-site-menu">Update site menu</a></li>
-    <li><a href="#update-the-docs-menu">Update the docs menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#install-microbiomedataset">Install <code>microbiomedataset</code></a></li>
   </ul>
 </nav>
 
@@ -946,7 +925,7 @@
   
 
       <li class="breadcrumb-item active" aria-current="page">
-        Chapter 2-microbiomeDataset
+        Chapter 2-microbiomeDataset class
       </li>
     </ol>
   </nav>
@@ -963,39 +942,27 @@
 
       <div class="docs-article-container">
         
-        <h1>Chapter 2-microbiomeDataset</h1>
+        <h1>Chapter 2-microbiomeDataset class</h1>
 
         <article class="article-style">
 
           
           
 
-          <h2 id="flexibility">Flexibility</h2>
-<p>This feature can be used for publishing content such as:</p>
-<ul>
-<li><strong>Online courses</strong></li>
-<li><strong>Project or software documentation</strong></li>
-<li><strong>Tutorials</strong></li>
-<li><strong>Notes</strong></li>
-</ul>
-<p>The <code>courses</code> folder may be renamed. For example, we can rename it to <code>docs</code> for software/project documentation or <code>tutorials</code> for creating an online course.</p>
-<h2 id="delete-courses">Delete courses</h2>
-<p><strong>To remove these pages, delete the <code>courses</code> folder and see below to delete the associated menu link.</strong></p>
-<h2 id="update-site-menu">Update site menu</h2>
-<p>After renaming or deleting the <code>courses</code> folder, you may wish to update any <code>[[main]]</code> menu links to it by editing your menu configuration at <code>config/_default/menus.toml</code>.</p>
-<p>For example, if you delete this folder, you can remove the following from your menu configuration:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Courses&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;courses/&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">50</span>
-</span></span></code></pre></div><p>Or, if you are creating a software documentation site, you can rename the <code>courses</code> folder to <code>docs</code> and update the associated <em>Courses</em> menu configuration to:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Docs&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;docs/&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">50</span>
-</span></span></code></pre></div><h2 id="update-the-docs-menu">Update the docs menu</h2>
-<p>If you use the <em>docs</em> layout, note that the name of the menu in the front matter should be in the form <code>[menu.X]</code> where <code>X</code> is the folder name. Hence, if you rename the <code>courses/example/</code> folder, you should also rename the menu definitions in the front matter of files within <code>courses/example/</code> from <code>[menu.example]</code> to <code>[menu.&lt;NewFolderName&gt;]</code>.</p>
-
+          <h2 id="about">About</h2>
+<p><code>microbiomedataset</code> provide the <code>microbiome_dataset</code> class which is specifically developed and designed to organize the rectangular microbiome data sets into a standard structure. <code>microbiomedataset</code> package also provide a lot of base processing functions to process and operate the <code>microbiome_dataset</code> class. In additional, the microbiome_dataset class can be processed by all the packages from <code>tidymicrobiome</code>.</p>
+<h2 id="install-microbiomedataset">Install <code>microbiomedataset</code></h2>
+<p>You can install <code>microbiomedataset</code> from GitLab.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">if(!require(remotes)){
+</span></span><span class="line"><span class="cl">install.packages(&#34;remotes&#34;)
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">remotes::install_gitlab(&#34;tidymicrobiome/microbiomedataset&#34;)
+</span></span></code></pre></div><p>or GitHub</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">remotes::install_github(&#34;tidymicrobiome/microbiomedataset&#34;)
+</span></span></code></pre></div><p>or tidymicrobiome.org</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nf">source</span><span class="p">(</span><span class="s">&#34;https://www.tidymicrobiome.org/tidymicrobiome-packages/install_tidymicrobiome.txt&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">install_tidymicrobiome</span><span class="p">(</span><span class="nx">from</span> <span class="p">=</span> <span class="s">&#34;tidymicrobiome.org&#34;</span><span class="p">,</span> <span class="nx">which_package</span> <span class="p">=</span> <span class="s">&#34;microbiomedataset&#34;</span><span class="p">)</span>
+</span></span></code></pre></div>
 
         </article>
 
