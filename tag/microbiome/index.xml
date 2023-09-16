@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microbiome | TidyMicrobiome</title>
+    <link>https://www.tidymicrobiome.org/tag/microbiome/</link>
+      <atom:link href="https://www.tidymicrobiome.org/tag/microbiome/index.xml" rel="self" type="application/rss+xml" />
+    <description>Microbiome</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.tidymicrobiome.org/media/icon_hu020e6bcd0cde00a6d3452f1e68a5a64c_185832_512x512_fill_lanczos_center_3.png</url>
+      <title>Microbiome</title>
+      <link>https://www.tidymicrobiome.org/tag/microbiome/</link>
+    </image>
+    
+    <item>
+      <title>microbiomedataset</title>
+      <link>https://www.tidymicrobiome.org/packages/microbiomedataset/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.tidymicrobiome.org/packages/microbiomedataset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microbiomeplot</title>
+      <link>https://www.tidymicrobiome.org/packages/microbiomeplot/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.tidymicrobiome.org/packages/microbiomeplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidymicrobiome</title>
+      <link>https://www.tidymicrobiome.org/packages/tidymicrobiome/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.tidymicrobiome.org/packages/tidymicrobiome/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
