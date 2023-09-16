@@ -75,14 +75,8 @@ install_tidymicrobiome <-
     ####package list
     core_package_list <-
       c(
-        "masstools",
-        "massdataset",
-        "metid",
-        "massstat",
-        "massqc",
-        "massprocesser",
-        "masscleaner",
-        "metpath",
+        "microbiomedataset",
+        "microbiomeplot",
         "tidymicrobiome"
       )
     
@@ -95,9 +89,7 @@ install_tidymicrobiome <-
           core_package_list
       } else{
         package_list <-
-          c(core_package_list,
-            "massconverter",
-            "massdatabase")
+          c(core_package_list)
       }
     }
     

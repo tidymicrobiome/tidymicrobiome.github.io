@@ -36,9 +36,9 @@ seq_len(nrow(file)) %>%
     if (file$version.x[i] != file$version.y[i]) {
       unlink(file.path("static/tidymicrobiome-packages/", file$file_name.x[i]))
       file.copy(from = file.path("..",  file$file_name.y[i]), to = "static/tidymicrobiome-packages/")
-      file.copy(from = file.path("..",  file$package[i], "/Description"), 
-                to = paste0("static/tidymicrobiome-packages/", file$package[i], "_Description.txt"))
     }
+    file.copy(from = file.path("..",  file$package[i], "/Description"), 
+              to = paste0("static/tidymicrobiome-packages/", file$package[i], "_Description.txt"))
   })
 
 readr::write_csv(file, file = "static/tidymicrobiome-packages/file.csv")
